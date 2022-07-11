@@ -1,55 +1,66 @@
-      body {
-        font-family: "Montserrat", sans-serif;
-        margin: 0;
-      }
-      table {
-        width: 100%;
-        height: 70vh;
-        background-color: rgb(50, 50, 50);
-        color: white;
-      }
-      td {
-        text-align: center;
-        width: 25%;
-        font-size: 28px;
-        background-color: rgb(20, 20, 20);
-      }
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+table {
+  width: 100%;
+  height: 70vh;
+  background-color: rgb(50, 50, 50);
+  color: white;
+}
+td {
+  text-align: center;
+  width: 25%;
+  font-size: 28px;
+  background-color: rgb(20, 20, 20);
+}
 
-      td:hover {
-        background-color: rgb(30, 30, 30);
-        cursor: pointer;
-      }
-      #resultArea {
-        height: 30vh;
-        background-color: rgb(40, 40, 40);
-        font-size: 60px;
-        color: white;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        padding: 20px;
-        box-sizing: border-box;
-      }
-      #result {
-        background-color: rgb(61, 61, 194);
-      }
-      #result:hover {
-        background-color: rgb(108, 108, 189);
-      }
-      .highlight {
-        background-color: rgb(25, 25, 25);
-      }
-      a {
-        color: white;
-        text-decoration: none;
-      }
-      @keyframes border-pulsate {
-        0%   { border-color: rgba(0, 255, 255, 1); }
-        50%  { border-color: rgba(13, 228, 41, 0.925); }
-        100% { border-color: rgb(255, 0, 0); }
-    }
-    
-    .autismus {
-        border: 1px solid cyan;
-        animation: border-pulsate 2s infinite;
-    }
+td:hover {
+  background-color: rgb(30, 30, 30);
+  cursor: pointer;
+}
+#resultArea {
+  height: 30vh;
+  background-color: rgb(40, 40, 40);
+  font-size: 60px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#result {
+  background-color: rgb(61, 61, 194);
+}
+#result:hover {
+  background-color: rgb(108, 108, 189);
+}
+.highlight {
+  background-color: rgb(25, 25, 25);
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.autismus {
+  border: 1px solid cyan;
+  animation: border-pulsate 0.1s infinite;
+}
+@keyframes border-pulsate {
+  0% {
+    border-color: rgba(0, 255, 255, 1);
+  }
+  25% {
+    border-color: rgb(227, 243, 4);
+  }
+  50% {
+    border-color: rgba(13, 228, 41, 0.925);
+  }
+  75% {
+    border-color: rgb(212, 4, 253);
+  }
+  100% {
+    border-color: rgb(255, 0, 0);
+  }
+}
