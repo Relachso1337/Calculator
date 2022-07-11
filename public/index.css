@@ -43,3 +43,13 @@
         color: white;
         text-decoration: none;
       }
+      @keyframes border-pulsate {
+        0%   { border-color: rgba(0, 255, 255, 1); }
+        50%  { border-color: rgba(13, 228, 41, 0.925); }
+        100% { border-color: rgb(255, 0, 0); }
+    }
+    
+    .autismus {
+        border: 1px solid cyan;
+        animation: border-pulsate 2s infinite;
+    }
